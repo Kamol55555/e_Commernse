@@ -1,8 +1,9 @@
-import React from 'react'
-
 function Shop() {
   return (
-    <div>shop</div>
+    <section className="page_card">
+      <h1 className="page_title">Shop</h1>
+      <p className="page_text">Products will appear here soon.</p>
+    </section>
   )
 }
 
