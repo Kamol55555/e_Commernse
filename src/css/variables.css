@@ -1,8 +1,8 @@
 :root {
-  --header-height: 64px;
+  --header-height: 118px;
   --footer-height: 72px;
   --max-width: 1200px;
-  --shell-padding-x: 1.5rem;
+  --shell-padding-x: 1rem;
 
   --color-bg: #f1f5f9;
   --color-surface: #ffffff;
@@ -25,7 +25,26 @@
   --font-sans: 'Roboto', system-ui, -apple-system, sans-serif;
 }
 
+@media (min-width: 600px) {
+  :root {
+    --shell-padding-x: 1.25rem;
+  }
+}
+
 @media (min-width: 768px) {
+  :root {
+    --shell-padding-x: 1.5rem;
+    --footer-height: 64px;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
   :root {
     --shell-padding-x: 2rem;
   }

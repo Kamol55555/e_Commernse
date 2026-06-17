@@ -83,16 +83,8 @@ function Register() {
             onChange={handleChange('password')}
           />
         </label>
-        <label className={styles.label}>
-          Confirm password
-          <input
-            className={styles.input}
-            type="password"
-            placeholder="••••••••"
-            value={userData.confirmPassword}
-            onChange={handleChange('confirmPassword')}
-          />
-        </label>
+        
+      
         <div className={styles.actions}>
           <button className={styles.submit_btn} type="submit" disabled={isDisabled}>
             Register
