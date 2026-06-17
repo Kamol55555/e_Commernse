@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: var(--header-height);
+  padding: 0 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav a,
+.sign_out {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.sign_out:hover {
+  color: var(--color-primary);
+}
+
+.sign_out {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search {
+  flex: 1;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.search input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.user a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.user a:hover {
+  background: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.35rem;
+  color: var(--color-text);
+}
+
+.user_info svg {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.user_info svg:hover {
+  color: var(--color-primary);
+}
+
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+  }
+}

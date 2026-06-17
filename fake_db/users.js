@@ -4,8 +4,8 @@ export const users = [
     {
       id: 1,
       name: "John Doe",
-      email: "john.doe@example.com",
-      password: "password123",
+      email: "test@test.com",
+      password: "123",
       img: "https://i.pravatar.cc/150?img=1",
     },
     {
