@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
 import styles from '../css/Footer.module.css'
-import headerStyles from '../css/Header.module.css'
 
 function Footer() {
   return (
@@ -10,18 +8,20 @@ function Footer() {
           &copy; {new Date().getFullYear()} E-commerce. All rights reserved.
         </p>
         <nav className={styles.footer_nav}>
-          <Link to="/" className={headerStyles.footer_link}>
-            Home
-          </Link>
-          <Link to="/shop" className={headerStyles.footer_link}>
-            Shop
-          </Link>
-          <Link to="/contact" className={headerStyles.footer_link}>
-            Contact
-          </Link>
-          <Link to="/about" className={headerStyles.footer_link}>
-            About
-          </Link>
+          {/* user contact info */}
+          <div className={styles.contact_info}>
+            <h3>Contact Us</h3>
+            <p>Email: info@ecommerce.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+          </div>
+          <div className={styles.contact_info}>
+            <h3>Follow Us</h3>
+            <p>Facebook: @ecommerce</p>
+            <p>Twitter: @ecommerce</p>
+            <p>Instagram: @ecommerce</p>
+          </div>
+          
         </nav>
       </div>
     </footer>
