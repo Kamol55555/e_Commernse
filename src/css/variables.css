@@ -1,5 +1,6 @@
 :root {
   --header-height: 118px;
+  --path-height: 2.5rem;
   --footer-height: 72px;
   --max-width: 1200px;
   --shell-padding-x: 1rem;
